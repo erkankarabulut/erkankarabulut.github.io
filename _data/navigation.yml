@@ -1,0 +1,12 @@
+- name: About Me
+  link: /#about-me
+  id: about
+- name: Theses
+  link: /#theses
+  id: theses
+- name: Publications
+  link: /#publications
+  id: publications
+- name: News
+  link: /#news
+  id: news
