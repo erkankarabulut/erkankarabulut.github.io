@@ -210,3 +210,25 @@ a {
   width: 210px;
   align-items: center;
 }
+
+.copyright-section-outer-color-container {
+  background-color: #C7D3DD;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.copyright-section-inner {
+  text-align: justify;
+  width: 800px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+}
+
+.copyright-section-inner-mobile {
+  width: 370px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
