@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="icon" href="/assets/images/graph.svg">
+    {% include google_analytics.html %}
+    {% feed_meta %}
+    {% seo %}
+</head>
+<body>
+{% include navigation.html %}
+{{ content }}
+</body>
+</html>

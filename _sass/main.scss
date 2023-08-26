@@ -16,7 +16,7 @@ nav {
   align-self: center;
   width: 100%;
   min-width: 400px;
-  background-color: #E8EEF2;
+  background-color: #3E4E50;
   position: fixed;
   top: 0;
 }
@@ -37,22 +37,22 @@ nav {
 }
 
 .nav-item {
-  text-align: center;
+  text-align: left;
   font-size: 20px;
-  width: 150px;
+  margin-right: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .nav-item-mobile {
-  text-align: center;
+  text-align: left;
   font-size: 16px;
-  width: 90px;
+  margin-right: 25px;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
