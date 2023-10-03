@@ -14,7 +14,7 @@ layout: default
 
     window.onload = function () {
         if (screen.width < 800 || isMobileDevice()) {
-            document.getElementById("about-me").className += "-mobile";
+            document.getElementById("biography").className += "-mobile";
             document.getElementById("introduction-text").className += "-mobile";
             document.getElementById("publications").className += "-mobile";
             document.getElementById("theses").className += "-mobile";
@@ -31,10 +31,11 @@ layout: default
 
 <div class="most-outer-container">
     <div class="two-column-outer-container">
-        <div class="two-column-inner" id="about-me">
+        <div class="two-column-inner" id="biography">
             <div>
                 <img src="/assets/images/me.jpg" alt="Erkan Karabulut" class="picture">
-                <p class="figure-description"><b>Figure 1</b>: A person who seems to like mountains.</p>
+                <p class="figure-description"><strong>Erkan Karabulut</strong></p>
+                <p class="figure-description">PhD Student, University of Amsterdam</p>
                 <div class="social-icon-list">
                     <a target="_blank" href="mailto:e.karabulut@uva.nl">
                         <img src="/assets/images/outlook.png" alt="Google Scholar" class="social-icon">
@@ -54,13 +55,12 @@ layout: default
                 </div>
             </div>
             <div class="introduction-text" id="introduction-text">
-                <h1 class="name">Erkan Karabulut</h1>
+                <h1 class="name">Biography</h1>
                 <p class="justified-text">
-                    Hi! I am a CS researcher, seeking to produce new knowledge as I sit in my chair and gobble
+                    I am a CS researcher, seeking to produce new knowledge while sitting on my chair and gobble
                     up freshly-baked knowledge that I access with a few clicks,
                     despite <a target="_blank" href="https://www.dictionary.com/browse/nothing-new-under-the-sun">
-                    there is nothing new under the sun</a>. If I get bored, I climb some mountains (see figure
-                    1 on the left for proof).
+                    there is nothing new under the sun</a>. If I get bored, I climb some mountains.
                 </p>
                 <p class="justified-text">
                     More formally, I am a PhD student doing research on knowledge modeling and reasoning

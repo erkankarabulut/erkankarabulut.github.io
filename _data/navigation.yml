@@ -1,5 +1,5 @@
-- name: About Me
-  link: /#about-me
+- name: Biography
+  link: /#biography
   id: about
 - name: News
   link: /#news
