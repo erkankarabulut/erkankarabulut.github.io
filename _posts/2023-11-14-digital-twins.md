@@ -12,9 +12,10 @@ Date: 23.12.2023
 
 **TL;DR:** With great simplicity, digital replica of a physical system with a bidirectional communication in between
 is referred as Digital Twins (DTs). They are not new. DTs are different from what most would think of Internet of Things
-(IoT) networks, yet they can be an IoT network. And they are becoming highly popular in the past 5 years. This article
-argues a relation (possibly causation) in between recent developments in AI and the hype around DTs. It also summarizes
-how semantic technologies (ontologies and knowledge graphs) are being utilized in DTs.
+(IoT) networks, yet they can be an IoT network. And they are becoming highly popular in the past 5 years, due to the
+advancements in networking technologies (5G) as well as the involvement of semantic technologies in smart environments 
+in general. Semantics help with system/data modeling, interoperability, (implicit) relation extraction/learning, 
+and reasoning in digital twins.
 
 **Table of Contents**
 
