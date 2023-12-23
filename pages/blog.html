@@ -1,7 +1,7 @@
 ---
-title: News - Erkan Karabulut
 layout: default
-permalink: /news/
+title: Blog Posts - Erkan
+permalink: /blog
 ---
 <script>
     function isMobileDevice() {
@@ -24,17 +24,21 @@ permalink: /news/
     }
 </script>
 
-<div class="news-most-outer-container">
-    <div class="news-outer-color-container">
-        <div class="news-inner" id="news">
-            <h2 class="title-with-less-bottom-margin">News</h2>
-            <ul>
-                {% for item in site.data.news %}
-                <li class="justified-text">
-                    {{item}}<br/><br/>
-                </li>
-                {% endfor %}
-            </ul>
+<div class="blogs-outer-container">
+    <div class="blogs-outer-color-container">
+        <div class="blogs-inner-container">
+            <h2 class="blogs-title">Blog Posts</h2>
+            {% for post in site.posts %}
+            <a class="post-title" href="{{ post.url }}">
+                <div class="post-container">
+                    <img class="post-main-image" src="{{post.image}}" alt="{{ post.title }}">
+                    <div class="post-second-column">
+                        <span class="post-title">{{ post.title }}</span>
+                        <p class="post-description">{{post.description}}</p>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
         </div>
     </div>
 </div>

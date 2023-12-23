@@ -111,31 +111,11 @@ a {
   padding-bottom: 100px;
 }
 
-.theses-section-outer-color-container {
-  background-color: #D7D7D7;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  align-items: center;
-}
-
 .introduction-text {
   margin-left: 50px;
 }
 
 .introduction-text-mobile {
-}
-
-.theses-section-inner {
-  width: 800px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.theses-section-inner-mobile {
-  width: 370px;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .publications-section-outer-color-container {
@@ -222,7 +202,7 @@ a {
 }
 
 .copyright-section-outer-color-container {
-  background-color: #C7D3DD;
+  background-color: #3E4E50;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -234,17 +214,35 @@ a {
   width: 800px;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: black;
+  color: white;
+  text-decoration: none;
+}
+
+a.a-copyright:visited {
+  color: cornflowerblue;
 }
 
 .copyright-section-inner-mobile {
   width: 370px;
   padding-top: 20px;
   padding-bottom: 20px;
+
+}
+
+.name-under-figure {
+  font-size: 18px;
+  width: 250px;
+  text-align: center;
+}
+
+.email-under-figure {
+  font-size: 12px;
+  width: 250px;
+  text-align: center;
 }
 
 .figure-description {
-  font-size: 16px;
+  font-size: 11px;
   width: 250px;
   text-align: center;
 }

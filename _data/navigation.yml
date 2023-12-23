@@ -7,6 +7,6 @@
 - name: Publications
   link: /#publications
   id: publications
-- name: Theses
-  link: /#theses
-  id: theses
+- name: Blog
+  link: /blog
+  id: blog
