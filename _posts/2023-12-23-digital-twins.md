@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: blog_page
 permalink: /blog/digital-twins/
 title: 'Digital Twins'
 image: '/assets/images/tello_dt.png'

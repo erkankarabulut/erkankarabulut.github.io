@@ -1,0 +1,33 @@
+/* individual blog posts page */
+.blog-page-most-outer-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #D7D7D7;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.blog-page-outer-color-container {
+  background-color: #D7D7D7;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.blog-page-inner {
+  text-align: justify;
+  width: 800px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: black;
+}
+
+.blog-page-inner-mobile {
+  text-align: justify;
+  width: 380px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+  color: black;
+}

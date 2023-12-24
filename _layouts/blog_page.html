@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Blog Posts - Erkan
-permalink: /blog
 ---
+
 <script>
     function isMobileDevice() {
         let check = false;
@@ -15,33 +14,29 @@ permalink: /blog
 
     window.onload = function () {
         if (screen.width < 800 || isMobileDevice()) {
+            document.getElementById("copyright").className += "-mobile";
             document.getElementById("navbar").className += "-mobile";
             document.getElementById("nav-item-about").className += "-mobile";
             document.getElementById("nav-item-publications").className += "-mobile";
             document.getElementById("nav-item-news").className += "-mobile";
             document.getElementById("nav-item-blog").className += "-mobile";
-
-            document.getElementById("post-container").className += "-mobile";
-            document.getElementById("blogs-title").className += "-mobile";
+            document.getElementById("blog-page-inner").className += "-mobile";
         }
     }
 </script>
 
-<div class="blogs-outer-container">
-    <div class="blogs-outer-color-container">
-        <div class="blogs-inner-container">
-            <h2 id="blogs-title" class="blogs-title">Blog Posts</h2>
-            {% for post in site.posts %}
-            <a class="post-title" href="{{ post.url }}">
-                <div id="post-container" class="post-container">
-                    <img class="post-main-image" src="{{post.image}}" alt="{{ post.title }}">
-                    <div class="post-second-column">
-                        <span class="post-title">{{ post.title }}</span>
-                        <p class="post-description">{{post.description}}</p>
-                    </div>
-                </div>
-            </a>
-            {% endfor %}
+<div class="blog-page-most-outer-container">
+    <div class="blog-page-outer-color-container">
+        <div id="blog-page-inner" class="blog-page-inner">
+            {{ content }}
+        </div>
+    </div>
+    <div class="copyright-section-outer-color-container">
+        <div class="copyright-section-inner" id="copyright">
+            Source code of this website is available at
+            <a class="a-copyright" target="_blank" href="https://github.com/erkankarabulut/erkankarabulut.github.io">this</a>
+            address.
+            And can be used by anyone.
         </div>
     </div>
 </div>
