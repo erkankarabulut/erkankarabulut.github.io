@@ -21,11 +21,13 @@
 title: Erkan Karabulut
 email: e.karabulut@uva.nl
 description: >- # this means to ignore newlines until "baseurl:"
-  My personal website
+  Erkan Karabulut's personal website where he publishes his resume, publications, and blogs about digital twins, >-
+  association rule learning, semantics (ontologies and knowledge graphs), reasoning, deep learning and artificial >- 
+  intelligence.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://erkankarabulut.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: erkankkarabulut
-github_username:  erkankarabulut
+github_username: erkankarabulut
 
 # Build settings
 theme: minima
