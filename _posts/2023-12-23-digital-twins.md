@@ -1,6 +1,7 @@
 ---
 layout: blog_page
 permalink: /blog/digital-twins/
+publish_date: '23.12.2023'
 title: 'Digital Twins'
 image: '/assets/images/tello_dt.png'
 description: 'What are digital twins? Why digital twin is not a new technology? What made digital twins popular
