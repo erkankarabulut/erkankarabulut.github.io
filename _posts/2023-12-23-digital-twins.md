@@ -132,30 +132,41 @@ system.
 
 ### References
 
-[1] R. D. D’Amico, J. A. Erkoyuncu, S. Addepalli, S. Penver, Cognitive digital twin: An approach to improve the
-maintenance management, CIRP Journal of Manufacturing Science and Technology 38 (2022) 613–630.
+[1] R. D. D’Amico, J. A. Erkoyuncu, S. Addepalli, S.
+Penver, <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S1755581722001158">Cognitive digital
+twin: An approach to improve the maintenance management, CIRP Journal of Manufacturing Science and Technology</a> 38
+(2022) 613–630.
 
-[2] A. Tello, V. Degeler, Digital Twins: An enabler for digital transformation, in: The Digital Transformation handbook,
-Groningen Digital Business Centre (GDBC), 2022. doi:10.5281/zenodo.7647493
+[2] A. Tello, V. Degeler, <a target="_blank" href="https://pure.uva.nl/ws/files/106231123/22digitaltwins.pdf">Digital
+Twins: An enabler for digital transformation, in: The Digital Transformation handbook</a>, Groningen Digital Business
+Centre (GDBC), 2022. doi:10.5281/zenodo.7647493
 
-[3] Karabulut, Erkan, Degeler, Victoria, and Groth, Paul. "Semantic Association Rule Learning from Time Series Data and
-Knowledge Graphs." In SemIIM’23: 2nd International Workshop on Semantic Industrial Information Modelling co-located with
-22nd International Semantic Web Conference (ISWC 2023).
+[3] Karabulut, Erkan, Degeler, Victoria, and Groth, Paul. <a target="_blank" href="https://arxiv.org/abs/2310.07348">
+Semantic Association Rule Learning from Time Series Data and Knowledge Graphs.</a> In SemIIM’23: 2nd International
+Workshop on Semantic Industrial Information Modelling co-located with 22nd International Semantic Web Conference (ISWC
+2023).
 
-[4] Karabulut, Erkan, Salvatore F. Pileggi, Paul Groth, and Victoria Degeler. "Ontologies in digital twins: A systematic
-literature review." Future Generation Computer Systems (2023).
+[4] Karabulut, Erkan, Salvatore F. Pileggi, Paul Groth, and Victoria
+Degeler. <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0167739X23004739">Ontologies in
+digital twins: A systematic literature review.</a> Future Generation Computer Systems (2023).
 
-[5] M. Grieves, Completing the cycle: Using plm information in the sales and service functions, conference:
-SME Management Forum (10 2002).
+[5] M.Grieves,
+<a target="_blank" href="https://www.researchgate.net/publication/356192963_SME_Management_Forum_Completing_the_Cycle_Using_PLM_Information_in_the_Sales_and_Service_Functions">
+Completing the cycle: Using plm information in the sales and service functions</a>. Conference: SME Management Forum
+(10 2002).
 
-[6] Barricelli, Barbara Rita, Elena Casiraghi, and Daniela Fogli. "A survey on digital twin: Definitions,
-characteristics, applications, and design implications." IEEE access 7 (2019): 167653-167671.
+[6] Barricelli, Barbara Rita, Elena Casiraghi, and Daniela
+Fogli. <a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/8901113"> A survey on digital twin:
+Definitions, characteristics, applications, and design implications.</a> IEEE access 7 (2019): 167653-167671.
 
-[7] NASA. Houston, we've got a problem. Accessed: November 17, 2023. [Online].
-Available: https://history.nasa.gov/ep76.pdf
+[7] NASA. Houston, we've got a problem. Accessed: November 17, 2023. Available
+online: <a href="https://history.nasa.gov/ep76.pdf" target="_blank">Link.</a>
 
-[8] Stephen Ferguson. "Apollo 13: The First Digital Twin." Available
-Online: https://blogs.sw.siemens.com/simcenter/apollo-13-the-first-digital-twin/. Accessed: 23.12.2023.
+[8] Stephen Ferguson. "Apollo 13: The First Digital Twin." Available online:
+<a target="_blank" href="https://blogs.sw.siemens.com/simcenter/apollo-13-the-first-digital-twin/">Link.</a>
+Accessed: 23.12.2023.
 
-[9] Babaei Giglou, Hamed, Jennifer D’Souza, and Sören Auer. "LLMs4OL: Large Language Models for Ontology Learning."
-International Semantic Web Conference. Cham: Springer Nature Switzerland, 2023.
+[9] Babaei Giglou, Hamed, Jennifer D’Souza, and Sören
+Auer. <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-031-47240-4_22">
+LLMs4OL: Large Language Models for Ontology Learning.</a> International Semantic Web Conference. Cham: Springer Nature
+Switzerland, 2023.
