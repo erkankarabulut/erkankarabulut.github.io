@@ -13,11 +13,11 @@ recently? How can semantics help digital twins?'
 Date: 23.12.2023
 
 **TL;DR:** With great simplicity, digital replica of a physical system with a bidirectional communication in between
-is referred as Digital Twins (DTs). They are not new. DTs are different from what most would think of Internet of Things
-(IoT) networks, yet they can be an IoT network. And they are becoming highly popular in the past 5 years, due to the
-advancements in networking technologies (5G) as well as the involvement of semantic technologies in smart environments
-in general. Semantics help with system/data modeling, interoperability, (implicit) relation extraction/learning,
-and reasoning in digital twins.
+is referred as Digital Twins. They are not new, they are not simulations, and they are not just an Internet of Things
+(IoT) network. Digital Twins are becoming highly popular in the past 5 years, following the advancements in networking
+technologies (5G), deep learning, and the involvement of semantic technologies in smart environments in general.
+Semantics help with system/data modeling, interoperability, (implicit) relation extraction / learning, and reasoning in
+digital twins.
 
 **Table of Contents**
 
@@ -55,12 +55,11 @@ Figure 1 illustrates both digital and physical 'spaces' together with the action
 and static metadata about the system is interpreted and the digital representation of the physical space is updated
 based on this interpretation. This is the main point of the first communication step, from PT to digital twin.
 
-The second is that, digital representation can be used to run analysis, simulations and applications, e.g., ML
-applications, which result in a set of actions to be performed in the PT. This is based on the representation of the
-physical space. These action can be towards making the physical system run more efficiently, mitigating problems in the
-physical system or just routine actions. This means that the digital twin can perform many tasks depending on the
-application and
-it is not characterized by certain set of applications.
+The second is that, digital representation can be used to run analysis, simulations and applications, e.g., machine
+learning applications, which result in a set of actions to be performed in the PT. This is based on the representation
+of the physical space. These actions can be towards making the physical system run more efficiently, mitigating problems
+in the physical system or just routine actions. This means that the digital twin can perform many tasks depending on the
+application and it is not characterized by certain set of applications.
 
 ### Historical Background - 'Houston, we have a problem!'
 
@@ -118,7 +117,7 @@ years thanks to the advancements around 4G and 5G.
 
 ## Digital Twins and Semantics
 
-Physical systems and its environment can get highly complex. Semantic technologies such as ontologies and knowledge
+Physical systems and their environment can get highly complex. Semantic technologies such as ontologies and knowledge
 graphs can help modeling and implementing such complex systems. Ontologies however, can now be created much faster
 thanks to Large Language Models (LLMs) [9]. Although LLMs can not create an ontology from scratch, they can help ease
 the process enormously.
