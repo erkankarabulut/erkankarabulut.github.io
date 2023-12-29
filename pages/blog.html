@@ -22,7 +22,9 @@ permalink: /blog
             document.getElementById("nav-item-blog").className += "-mobile";
 
             document.getElementById("post-container").className += "-mobile";
+            document.getElementById("post-main-image").className += "-mobile";
             document.getElementById("blogs-title").className += "-mobile";
+            document.getElementById("blogs-description").className += "-mobile";
         }
     }
 </script>
@@ -31,14 +33,14 @@ permalink: /blog
     <div class="blogs-outer-color-container">
         <div class="blogs-inner-container">
             <h2 id="blogs-title" class="blogs-title">Blog Posts</h2>
-            <p style="margin-left: 10px;">
+            <p id="blogs-description" class="blogs-description">
                 This is where I share my not-very-scientific, sometimes a little speculative, and sometimes unpopular
                 opinions about things.
             </p>
             {% for post in site.posts %}
             <a class="post-title" href="{{ post.url }}">
                 <div id="post-container" class="post-container">
-                    <img class="post-main-image" src="{{post.image}}" alt="{{ post.title }}">
+                    <img id="post-main-image" class="post-main-image" src="{{post.image}}" alt="{{ post.title }}">
                     <div class="post-second-column">
                         <span class="post-title">{{ post.title }}</span>
                         <p class="post-date">{{ post.publish_date }}</p>

@@ -65,8 +65,16 @@
 
 .post-main-image {
   width: 30%;
-  height: 50%;
+  height: 100%;
   padding: 15px;
+}
+
+.post-main-image-mobile {
+  width: 35%;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 5px;
 }
 
 .post-second-column {
@@ -92,4 +100,12 @@
   height: 20%;
   align-self: flex-start;
   margin-top: 20px;
+}
+
+.blogs-description {
+}
+
+.blogs-description-mobile {
+  margin-left: 20px;
+  margin-right: 20px;
 }

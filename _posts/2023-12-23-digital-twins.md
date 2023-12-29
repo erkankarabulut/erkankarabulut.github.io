@@ -46,7 +46,7 @@ in a way that is easy to store and process. This includes metadata about both el
 parts of the system and its environment. It is often referred as *Digital Shadow (DS)*.
 
 <p align="center">
-    <img alt="digital twins illustration taken from paper [2]" src="/assets/images/tello_dt.png" width="90%">
+    <img alt="digital twins illustration taken from paper [2]" src="/assets/images/tello_dt.png" width="95%">
     <br/>
     <span>Figure 1: Digital Twins illustration taken from [2]</span>
 </p>
@@ -78,7 +78,7 @@ spacecraft. And there is a bidirectional communication in between them, meaning 
 help re-configure the spacecraft using the data received and simulations.
 
 <p align="center">
-    <img alt="apollo 13 the first digital twin" src="/assets/images/apollo13.jpeg" width="90%">
+    <img alt="apollo 13 the first digital twin" src="/assets/images/apollo13.jpeg" width="95%">
     <br/>
     <span>Figure 2: Apollo 13 landing. Image credit: NASA.</span>
 </p>
