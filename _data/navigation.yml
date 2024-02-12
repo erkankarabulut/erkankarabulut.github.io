@@ -1,7 +1,7 @@
 - name: Biography
   link: /#biography
   id: about
-- name: News
+- name: Activities
   link: /#news
   id: news
 - name: Publications
