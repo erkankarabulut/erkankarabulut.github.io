@@ -11,6 +11,12 @@ life, the darkest months of the Netherlands.'
 
 # Scribbles around the first year as a PhD student
 
+<p align="center">
+    <img alt="digital twins illustration taken from paper [2]" src="/assets/images/lab42.png" width="95%">
+    <br/>
+    <span>Lab 42. Image source: https://campus.uva.nl/science-park/lab42/lab42.html</span>
+</p>
+
 One year ago, I moved to the Netherlands without knowing anyone here, to start my PhD. And I moved 3 days before my work
 starts. I have now completed the first year of my PhD. As a way of convincing my brain to look back and take lessons
 from the past, I push myself to write about things. This post is the result of this process. It is not meant to be
