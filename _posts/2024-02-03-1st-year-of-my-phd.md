@@ -73,7 +73,8 @@ pulling around the existing methods, the architecture or the algorithm to make i
 4 years of PhD, 4 projects and 4 full publications. That is the bureaucratic success criterion. Every PhD is different,
 yet the criterion is the same. There has to be a criterion, but it can not be personalized. So it is better not to take
 things personally. Some things always has to be done to look good on a piece of paper. Understanding this can help
-reducing stress.
+reducing stress. I have been lucky to have a publication already and great supervisors to guide me in the process of 
+making it.
 
 ### Collaboration
 
