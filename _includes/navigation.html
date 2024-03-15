@@ -1,7 +1,7 @@
 <nav>
     <div class="navbar-inner" id="navbar">
         {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" id="nav-item-{{item.id}}" class="nav-item"><b>{{ item.name }}</b></a>
+        <a href="{{ item.link }}" target="{{item.target}}" id="nav-item-{{item.id}}" class="nav-item"><b>{{ item.name }}</b></a>
         {% endfor %}
     </div>
 </nav>

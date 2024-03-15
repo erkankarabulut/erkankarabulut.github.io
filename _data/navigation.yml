@@ -1,12 +1,16 @@
 - name: Biography
   link: /#biography
   id: about
+  target: _self
 - name: News
   link: /#news
   id: news
+  target: _self
 - name: Publications
   link: /#publications
   id: publications
+  target: _self
 - name: Blog
-  link: /blog
+  link: https://erkankarabulut.medium.com/
   id: blog
+  target: _blank
