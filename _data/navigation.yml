@@ -11,6 +11,6 @@
   id: publications
   target: _self
 - name: Blog
-  link: blog
+  link: /blog
   id: blog
   target: _self
