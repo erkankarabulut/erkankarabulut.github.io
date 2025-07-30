@@ -1,7 +1,7 @@
 ---
 layout: blog_page
 permalink: /blog/scalable-neurosymbolic-tabular-rule-learning/
-publish_date: '27.07.2025'
+publish_date: '30.07.2025'
 title: 'Scalable Neurosymbolic Tabular Rule Learning with Aerial+'
 image: '/assets/images/aerial/example_thumbnail.png'
 description: 'Learning rules from data is a valuable and often overlooked task in modern AI.
