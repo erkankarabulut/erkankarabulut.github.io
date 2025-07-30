@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="icon" href="/assets/images/mountain.svg">
+    <link rel="stylesheet" href="/assets/css/rouge.css">
+    <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['$`', '`$'], ['\\(', '\\)']],
+                displayMath: [['```math', '```'], ['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
     {% include google_analytics.html %}
     {% feed_meta %}
     {% seo %}
