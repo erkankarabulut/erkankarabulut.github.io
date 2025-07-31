@@ -249,3 +249,11 @@ a.a-copyright:visited {
   width: 250px;
   text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+  pre, pre code, .highlight {
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-x: hidden;
+  }
+}

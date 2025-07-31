@@ -57,7 +57,6 @@ in [9].
     <th>cap-shape</th>
     <th>cap-surface</th>
     <th>cap-color</th>
-    <th>bruises</th>
     <th>odor</th>
     <th>...</th>
     <th>poisonous</th>
@@ -66,7 +65,6 @@ in [9].
     <td>x</td>
     <td>s</td>
     <td>n</td>
-    <td>t</td>
     <td>a</td>
     <td>...</td>
     <td>e</td>
@@ -75,7 +73,6 @@ in [9].
     <td>x</td>
     <td>s</td>
     <td>y</td>
-    <td>t</td>
     <td>l</td>
     <td>...</td>
     <td>p</td>
@@ -84,7 +81,6 @@ in [9].
     <td>b</td>
     <td>s</td>
     <td>w</td>
-    <td>t</td>
     <td>n</td>
     <td>...</td>
     <td>e</td>
@@ -158,11 +154,11 @@ Note that the mushroom table can be considered a small-to-mid size table. If we 
 the number of antecedents (k), the search space would grow in a factorial manner (for k = 5):
 
 \\[
-\sum_{i=1}^{k=5} \binom{117}{i} = \binom{117}{1} + \binom{117}{2} + \binom{117}{3} + \binom{117}{4} + \binom{117}{5}
+\sum_{i=1}^{k=5} \binom{117}{i} = \binom{117}{1} + \binom{117}{2} + ... + \binom{117}{5}
 \\]
 
 \\[
-= 117 + 6786 + 260,130 + 7,413,705 + 167,549,733 = 175,230,471
+= 117 + 6786 + ... + 167,549,733 = 175,230,471
 \\]
 
 Even with just 22 columns and 117 features, and itemsets of size up to 5, we have **175 million** possible combinations.
@@ -272,7 +268,8 @@ association_rules = rule_extraction.generate_rules(trained_autoencoder)
 
 # 4. calculate rule quality statistics (support, confidence, zhangs metric) for each rule
 if len(association_rules) > 0:
-    stats, association_rules = rule_quality.calculate_rule_stats(association_rules, trained_autoencoder.input_vectors)
+    stats, association_rules = rule_quality.calculate_rule_stats(association_rules, 
+        trained_autoencoder.input_vectors)
     print(stats, association_rules[:1])
 ```
 
@@ -288,7 +285,8 @@ PyAerial also supports item constraints (more features to come):
 features_of_interest = ['cap-shape', 'cap-surface', {'cap-color': 'c'}]
 
 # extract association rules for items of interest
-association_rules = rule_extraction.generate_rules(trained_autoencoder, features_of_interest=features_of_interest)
+association_rules = rule_extraction.generate_rules(trained_autoencoder, 
+    features_of_interest=features_of_interest)
 ...
 ```
 
@@ -350,11 +348,13 @@ table_with_labels = pd.concat([mushroom_features, labels], axis=1)
 trained_autoencoder = model.train(table_with_labels)
 
 # 3. extract "class" association rules
-association_rules = rule_extraction.generate_rules(trained_autoencoder, target_classes=["poisonous"])
+association_rules = rule_extraction.generate_rules(trained_autoencoder, 
+    target_classes=["poisonous"])
 
 # 4. calculate rule quality statistics (support, confidence, zhangs metric) for each rule
 if len(association_rules) > 0:
-    stats, association_rules = rule_quality.calculate_rule_stats(association_rules, trained_autoencoder.input_vectors)
+    stats, association_rules = rule_quality.calculate_rule_stats(association_rules, 
+        trained_autoencoder.input_vectors)
     print(stats, association_rules[:1])
 ```
 
