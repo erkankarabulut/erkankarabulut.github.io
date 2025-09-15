@@ -9,7 +9,7 @@ and discussing novel scientific work on the integration of what is symbolic and 
 to lead to more robust, explainable and generalizable AI models.'
 ---
 
-# Neurosymbolic Learning and Reasoning Conference Trip Report
+# NeSy 2025 Trip Report
 
 Last week, I presented our work on [scalable rule learning from tabular data](https://openreview.net/pdf?id=baSjVYDlMc)
 at the [Neurosymbolic Learning and Reasoning (NeSy) conference](https://2025.nesyconf.org/). NeSy is an annual
