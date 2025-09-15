@@ -154,11 +154,11 @@ Note that the mushroom table can be considered a small-to-mid size table. If we 
 the number of antecedents (k), the search space would grow in a factorial manner (for k = 5):
 
 \\[
-\sum_{i=1}^{k=5} \binom{117}{i} = \binom{117}{1} + \binom{117}{2} + ... + \binom{117}{5}
+\sum_{i=1}^{k=5} \binom{117}{i} = \binom{117}{1} + ... + \binom{117}{5}
 \\]
 
 \\[
-= 117 + 6786 + ... + 167,549,733 = 175,230,471
+= 117 + ... + 167,549,733 = 175,230,471
 \\]
 
 Even with just 22 columns and 117 features, and itemsets of size up to 5, we have **175 million** possible combinations.
@@ -436,7 +436,7 @@ If you found this blog post useful and want to discuss about it, feel free to re
 9. J. M. Luna, P. Fournier-Viger, and S. Ventura. Frequent itemset mining:
    A 25 years review. WIREs Data Mining and Knowledge Discovery, 9
    (6):e1329, 2019. doi: https://doi.org/10.1002/widm.1329. URL https:
-   //wires.onlinelibrary.wiley.com/doi/abs/10.1002/widm.1329.
+   //wires.onlinelibrary.wiley.com/ doi/abs/10.1002/widm.1329.
 10. C. Rudin. Stop explaining black box machine learning models for high
     stakes decisions and use interpretable models instead. Nature machine
     intelligence, 1(5):206–215, 2019.
