@@ -28,14 +28,19 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .news-page {
-    padding: var(--space-2xl) var(--space-md);
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  .news-page-header {
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-md);
   }
 
   .news-page-title {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-xl);
   }
 
   .news-page-subtitle {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-sm);
   }
 }

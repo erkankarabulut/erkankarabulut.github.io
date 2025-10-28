@@ -6,7 +6,7 @@
   link: /blog
   id: blog
   target: _self
-- name: CV
-  link: /assets/cv.pdf
-  id: cv
-  target: _blank
+- name: Resume
+  link: /cv
+  id: resume
+  target: _self
