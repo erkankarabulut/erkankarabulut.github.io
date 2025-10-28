@@ -7,6 +7,6 @@
   id: blog
   target: _self
 - name: Resume
-  link: /cv
+  link: /resume
   id: resume
   target: _self

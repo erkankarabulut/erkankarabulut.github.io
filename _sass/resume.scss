@@ -1,0 +1,78 @@
+/* ===================================
+   Resume Page
+   =================================== */
+
+.resume-page {
+  padding: var(--space-3xl) var(--space-lg);
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-header {
+  text-align: center;
+  max-width: 600px;
+}
+
+.resume-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-md);
+  color: var(--color-text-primary);
+}
+
+.resume-description {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2xl);
+  line-height: var(--line-height-relaxed);
+}
+
+.resume-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-xl);
+  background-color: var(--color-accent);
+  color: white;
+  border-radius: var(--border-radius-md);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-base);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+  text-decoration: none;
+  font-family: var(--font-sans);
+}
+
+.resume-download-btn:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: white;
+}
+
+.resume-download-btn svg {
+  flex-shrink: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .resume-page {
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  .resume-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .resume-description {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--space-xl);
+  }
+
+  .resume-download-btn {
+    width: 100%;
+    justify-content: center;
+    padding: var(--space-sm) var(--space-md);
+  }
+}
