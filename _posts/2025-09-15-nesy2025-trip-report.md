@@ -18,7 +18,7 @@ work on the integration of what is symbolic and sub-symbolic (neural) which hypo
 explainable and generalizable AI models.
 
 I think our work fits to NeSy conference scope better than any other conference. Because the NeSy
-community sees a value in symbolic reasoning and symbolic representations when integrated with neural networks. Pure
+community see[..](..)s a value in symbolic reasoning and symbolic representations when integrated with neural networks. Pure
 machine learning (ML) or AI conferences overlook the value of symbolic representations.
 
 ## Keynotes

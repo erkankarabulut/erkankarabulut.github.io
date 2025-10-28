@@ -1,16 +1,12 @@
-- name: Biography
-  link: /#biography
-  id: about
-  target: _self
-- name: News
-  link: /#news
-  id: news
-  target: _self
 - name: Publications
-  link: /#publications
+  link: /publications
   id: publications
   target: _self
 - name: Blog
   link: /blog
   id: blog
   target: _self
+- name: CV
+  link: /assets/cv.pdf
+  id: cv
+  target: _blank
