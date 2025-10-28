@@ -1,28 +1,55 @@
-- text: '2025 - E. Karabulut, D. Daza, P. Groth and V. Degeler. "Discovering Association Rules in High-Dimensional Small Tabular Data". In ANSyA’25: 1st International Workshop on Advanced Neuro-Symbolic Applications, co-located with 28th European Conference on Artificial Intelligence (ECAI 2025).'
+- year: 2025
+  title: 'E. Karabulut, D. Daza, P. Groth and V. Degeler. "Discovering Association Rules in High-Dimensional Small Tabular Data". In ANSyA''25: 1st International Workshop on Advanced Neuro-Symbolic Applications, co-located with 28th European Conference on Artificial Intelligence (ECAI 2025).'
   link: 'https://arxiv.org/pdf/2509.20113'
-- text: '2025 - E. Karabulut, P. Groth, and V. Degeler. "Pyaerial: Scalable association rule mining from tabular data". SoftwareX, 31:102341, 2025. ISSN 2352-7110.'
+
+- year: 2025
+  title: 'E. Karabulut, P. Groth, and V. Degeler. "Pyaerial: Scalable association rule mining from tabular data". SoftwareX, 31:102341, 2025. ISSN 2352-7110.'
   link: 'https://www.sciencedirect.com/science/article/pii/S2352711025003073'
-- text: '2025 - E. Karabulut, P. Groth, V. Degeler, Neurosymbolic association rule mining from tabular data, in: Proceedings of The 19th International Conference on Neurosymbolic Learning and Reasoning, volume 284 of Proceedings of Machine Learning Research, PMLR, 2025, pp. 565–588.'
+
+- year: 2025
+  title: 'E. Karabulut, P. Groth, V. Degeler, Neurosymbolic association rule mining from tabular data, in: Proceedings of The 19th International Conference on Neurosymbolic Learning and Reasoning, volume 284 of Proceedings of Machine Learning Research, PMLR, 2025, pp. 565–588.'
   link: 'https://proceedings.mlr.press/v284/karabulut25a.html'
-- text: '2025 - Erkan Karabulut, Paul Groth, and Victoria Degeler. "Learning Semantic Association Rules from Internet of Things Data". Neurosymbolic Artificial Intelligence, 2025:1. doi:10.1177/29498732251377518.'
+
+- year: 2025
+  title: 'Erkan Karabulut, Paul Groth, and Victoria Degeler. "Learning Semantic Association Rules from Internet of Things Data". Neurosymbolic Artificial Intelligence, 2025:1. doi:10.1177/29498732251377518.'
   link: 'https://journals.sagepub.com/doi/10.1177/29498732251377518'
-- text: '2024 - Karabulut, Erkan, Paul Groth, and Victoria Degeler. "3K: Knowledge-Enriched Digital Twin Framework." (2024). In LongevIoT’24: 1st International Workshop on Longevity in IoT Systems, co-located with 14th International Conference on Internet of Things, November 19–22, 2024, Oulu, Finland.'
+
+- year: 2024
+  title: 'Karabulut, Erkan, Paul Groth, and Victoria Degeler. "3K: Knowledge-Enriched Digital Twin Framework." (2024). In LongevIoT''24: 1st International Workshop on Longevity in IoT Systems, co-located with 14th International Conference on Internet of Things, November 19–22, 2024, Oulu, Finland.'
   link: 'https://dl.acm.org/doi/full/10.1145/3703790.3703834'
-- text: '2024 - Degeler, Victoria, et al. "DiTEC: Digital twin for evolutionary changes in water distribution networks." International Symposium on Leveraging Applications of Formal Methods. Cham: Springer Nature Switzerland, 2024.'
+
+- year: 2024
+  title: 'Degeler, Victoria, et al. "DiTEC: Digital twin for evolutionary changes in water distribution networks." International Symposium on Leveraging Applications of Formal Methods. Cham: Springer Nature Switzerland, 2024.'
   link: 'https://link.springer.com/chapter/10.1007/978-3-031-75390-9_5'
-- text: '2024 - Huang, Yiwen, Erkan Karabulut, and Victoria Degeler. "Large Language Model for Ontology Learning In Drinking Water Distribution Network Domain.". ELMKE’24: Evaluation of Language Models in Knowledge Engineering, co-located with 24th International Conference on Knowledge Engineering and Knowledge Management, 26-28 November, 2024, Amsterdam, The Netherlands.'
+
+- year: 2024
+  title: 'Huang, Yiwen, Erkan Karabulut, and Victoria Degeler. "Large Language Model for Ontology Learning In Drinking Water Distribution Network Domain.". ELMKE''24: Evaluation of Language Models in Knowledge Engineering, co-located with 24th International Conference on Knowledge Engineering and Knowledge Management, 26-28 November, 2024, Amsterdam, The Netherlands.'
   link: 'https://pure.uva.nl/ws/files/201274807/24LLM4WDN.pdf'
-- text: '2024 - Erkan Karabulut, Victoria Degeler, and Paul Groth. AE SemRL: Learning Semantic Association Rules with Autoencoders, 2024. (Earlier version of Aerial)'
+
+- year: 2024
+  title: 'Erkan Karabulut, Victoria Degeler, and Paul Groth. AE SemRL: Learning Semantic Association Rules with Autoencoders, 2024. (Earlier version of Aerial)'
   link: 'https://arxiv.org/pdf/2403.18133.pdf'
-- text: '2023 - Karabulut, Erkan, Degeler, Victoria, and Groth, Paul. "Semantic Association Rule Learning from Time Series Data and Knowledge Graphs." In SemIIM’23: 2nd International Workshop on Semantic Industrial Information Modelling co-located with 22nd International Semantic Web Conference (ISWC 2023).'
+
+- year: 2023
+  title: 'Karabulut, Erkan, Degeler, Victoria, and Groth, Paul. "Semantic Association Rule Learning from Time Series Data and Knowledge Graphs." In SemIIM''23: 2nd International Workshop on Semantic Industrial Information Modelling co-located with 22nd International Semantic Web Conference (ISWC 2023).'
   link: 'https://ceur-ws.org/Vol-3647/SemIIM2023_paper_3.pdf'
-- text: '2023 - Karabulut, Erkan, Salvatore F. Pileggi, Paul Groth, and Victoria Degeler. "Ontologies in digital twins: A systematic literature review." Future Generation Computer Systems (2023).'
+
+- year: 2023
+  title: 'Karabulut, Erkan, Salvatore F. Pileggi, Paul Groth, and Victoria Degeler. "Ontologies in digital twins: A systematic literature review." Future Generation Computer Systems (2023).'
   link: 'https://doi.org/10.1016/j.future.2023.12.013'
-- text: '2023 - E. Karabulut and R. C. Sofia, "An Analysis of Machine Learning-based Semantic Matchmaking," in IEEE Access, doi: 10.1109/ACCESS.2023.3259360. 2023.'
+
+- year: 2023
+  title: 'E. Karabulut and R. C. Sofia, "An Analysis of Machine Learning-based Semantic Matchmaking," in IEEE Access, doi: 10.1109/ACCESS.2023.3259360. 2023.'
   link: 'https://ieeexplore.ieee.org/document/10076794'
-- text: '2022 - Bnouhanna, N., Karabulut, E., Sofia, R. C., Seder, E. E., Scivoletto, G., & Insolvibile, G. (2022, March). An Evaluation of a Semantic Thing To Service Matching Approach in Industrial IoT Environments. In 2022 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops) (pp. 433-438). IEEE.'
+
+- year: 2022
+  title: 'Bnouhanna, N., Karabulut, E., Sofia, R. C., Seder, E. E., Scivoletto, G., & Insolvibile, G. (2022, March). An Evaluation of a Semantic Thing To Service Matching Approach in Industrial IoT Environments. In 2022 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops) (pp. 433-438). IEEE.'
   link: 'http://dx.doi.org/10.1109/PerComWorkshops53856.2022.9767519'
-- text: '2021 - Karabulut, Erkan, Nisrine Bnouhanna, and Rute C. Sofia. "ML-based data classification and data aggregation on the edge." Proceedings of the CoNEXT Student Workshop. 2021.'
+
+- year: 2021
+  title: 'Karabulut, Erkan, Nisrine Bnouhanna, and Rute C. Sofia. "ML-based data classification and data aggregation on the edge." Proceedings of the CoNEXT Student Workshop. 2021.'
   link: 'http://dx.doi.org/10.1145/3488658.3493786'
-- text: '2018 - Yazici, Ilkay Melek, Erkan Karabulut, and Mehmet S. Aktas. "A data provenance visualization approach." 2018 14th International Conference on Semantics, Knowledge and Grids (SKG). IEEE, 2018.'
+
+- year: 2018
+  title: 'Yazici, Ilkay Melek, Erkan Karabulut, and Mehmet S. Aktas. "A data provenance visualization approach." 2018 14th International Conference on Semantics, Knowledge and Grids (SKG). IEEE, 2018.'
   link: 'http://dx.doi.org/10.1109/SKG.2018.00019'

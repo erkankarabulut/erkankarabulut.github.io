@@ -7,6 +7,53 @@
   min-height: calc(100vh - var(--nav-height));
 }
 
+/* Year Grouping */
+.year-group {
+  margin-bottom: var(--space-3xl);
+}
+
+.year-group:last-child {
+  margin-bottom: 0;
+}
+
+.year-header {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--color-accent);
+  display: inline-block;
+  font-family: var(--font-sans);
+}
+
+.publications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.publication-item {
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  position: relative;
+  text-align: justify;
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-secondary);
+}
+
+.publication-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: var(--font-weight-bold);
+}
+
+.publication-text {
+  display: inline;
+}
+
 .publication-link {
   display: inline-flex;
   align-items: center;
@@ -101,5 +148,21 @@
     margin-top: var(--space-xl);
     margin-bottom: var(--space-md);
     padding-top: var(--space-md);
+  }
+
+  .year-group {
+    margin-bottom: var(--space-2xl);
+  }
+
+  .year-header {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-md);
+  }
+
+  .publication-item {
+    font-size: var(--font-size-sm);
+    padding-left: var(--space-md);
+    margin-bottom: var(--space-md);
+    text-align: left;
   }
 }

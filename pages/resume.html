@@ -7,19 +7,55 @@ permalink: /resume/
 <div class="resume-page">
     <div class="container">
         <div class="resume-header">
-            <h1 class="resume-title">Resume</h1>
-            <p class="resume-description">Download my full resume below.</p>
-            <a href="/assets/resume.pdf" download class="resume-download-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                    <polyline points="7 10 12 15 17 10"></polyline>
-                    <line x1="12" y1="15" x2="12" y2="3"></line>
-                </svg>
-                Download Resume (PDF)
-            </a>
+            <div class="resume-title-section">
+                <h1 class="resume-title">Resume</h1>
+                <span class="resume-badge" id="resume-last-updated">Loading...</span>
+            </div>
+            <p class="resume-description">
+                Download my complete academic and professional resume in PDF format.
+            </p>
+
+            <div class="resume-actions">
+                <a href="/assets/resume.pdf" download class="resume-download-btn primary" aria-label="Download resume as PDF">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download PDF
+                </a>
+
+                <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-download-btn secondary" aria-label="View resume in browser">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    View in Browser
+                </a>
+            </div>
         </div>
     </div>
 </div>
+
+<script>
+// Fetch the PDF file's last modification date
+fetch('/assets/resume.pdf', { method: 'HEAD' })
+    .then(response => {
+        const lastModified = response.headers.get('Last-Modified');
+        if (lastModified) {
+            const date = new Date(lastModified);
+            const options = { year: 'numeric', month: 'long' };
+            const formattedDate = date.toLocaleDateString('en-US', options);
+            document.getElementById('resume-last-updated').textContent = `Last updated: ${formattedDate}`;
+        } else {
+            document.getElementById('resume-last-updated').textContent = 'Last updated: Recently';
+        }
+    })
+    .catch(() => {
+        document.getElementById('resume-last-updated').textContent = 'Last updated: Recently';
+    });
+</script>
 
 <footer class="footer">
     <div class="container">
