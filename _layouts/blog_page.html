@@ -44,12 +44,59 @@ layout: default
                         data-reactions-enabled="1"
                         data-emit-metadata="0"
                         data-input-position="bottom"
-                        data-theme="preferred_color_scheme"
+                        data-theme="light"
                         data-lang="en"
                         crossorigin="anonymous"
                         async>
                 </script>
             </div>
+
+            <script>
+                // Sync Giscus theme with site theme
+                (function() {
+                    function getGiscusTheme() {
+                        const theme = document.documentElement.getAttribute('data-theme');
+                        return theme === 'dark' ? 'dark' : 'light';
+                    }
+
+                    function setGiscusTheme() {
+                        const iframe = document.querySelector('.giscus-frame');
+                        if (!iframe) return;
+
+                        const theme = getGiscusTheme();
+                        iframe.contentWindow.postMessage(
+                            { giscus: { setConfig: { theme: theme } } },
+                            'https://giscus.app'
+                        );
+                    }
+
+                    // Set theme when Giscus loads
+                    window.addEventListener('message', function(event) {
+                        if (event.origin !== 'https://giscus.app') return;
+                        if (!(typeof event.data === 'object' && event.data.giscus)) return;
+
+                        // Giscus has loaded, set the correct theme
+                        setGiscusTheme();
+                    });
+
+                    // Listen for theme changes
+                    const observer = new MutationObserver(function(mutations) {
+                        mutations.forEach(function(mutation) {
+                            if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+                                setGiscusTheme();
+                            }
+                        });
+                    });
+
+                    observer.observe(document.documentElement, {
+                        attributes: true,
+                        attributeFilter: ['data-theme']
+                    });
+
+                    // Set initial theme after a short delay to ensure iframe is ready
+                    setTimeout(setGiscusTheme, 1000);
+                })();
+            </script>
         </article>
     </div>
 </div>
