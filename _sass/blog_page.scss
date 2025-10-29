@@ -298,3 +298,26 @@
     font-size: var(--font-size-sm);
   }
 }
+
+/* ===================================
+   Giscus Comments Section
+   =================================== */
+
+.giscus-comments {
+  margin-top: var(--space-3xl);
+  padding-top: var(--space-2xl);
+  border-top: 2px solid var(--color-border);
+}
+
+/* Adjust giscus theme colors to match site */
+.giscus, .giscus-frame {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .giscus-comments {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-lg);
+  }
+}
