@@ -588,7 +588,7 @@ nav {
 
   /* Biography Text */
   .biography-text p {
-    text-align: left;
+    text-align: justify;
     font-size: var(--font-size-sm);
   }
 
@@ -694,3 +694,29 @@ nav {
 
 .mb-0 { margin-bottom: 0; }
 .mt-0 { margin-top: 0; }
+
+/* ===================================
+   Theme-aware seagull icon
+   =================================== */
+
+.seagull-icon {
+  display: inline;
+}
+
+/* Light theme: show dark seagull, hide light seagull */
+.seagull-dark {
+  display: inline;
+}
+
+.seagull-light {
+  display: none;
+}
+
+/* Dark theme: hide dark seagull, show light seagull */
+[data-theme="dark"] .seagull-dark {
+  display: none;
+}
+
+[data-theme="dark"] .seagull-light {
+  display: inline;
+}
