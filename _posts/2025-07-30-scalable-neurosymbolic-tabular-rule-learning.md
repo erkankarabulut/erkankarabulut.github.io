@@ -31,7 +31,7 @@ Feel free to reach out: [e.karabulut@uva.nl](mailto:e.karabulut@uva.nl)
 
 **Links** to our paper (Aerial+, accepted at [NeSy 2025](https://2025.nesyconf.org/)) and Python library:
 
-📄 [arxiv.org/pdf/2504.19354](https://arxiv.org/pdf/2504.19354)
+📄 [https://proceedings.mlr.press/v284/karabulut25a.html](https://proceedings.mlr.press/v284/karabulut25a.html)
 
 🐍 [https://github.com/DiTEC-project/pyaerial](https://github.com/DiTEC-project/pyaerial)
 
@@ -408,10 +408,9 @@ If you found this blog post useful and want to discuss about it, feel free to re
 
 ### References
 
-1. E. Karabulut, P. Groth, and V. Degeler. Neurosymbolic association
-   rule mining from tabular data. In Proceedings of the 19th Conference
-   on Neurosymbolic Learning and Reasoning (NeSy 2025), Accepted/In
-   Press. Preprint available at https://arxiv.org/abs/2504.19354.
+1. E. Karabulut, P. Groth, V. Degeler, Neurosymbolic association rule mining from tabular data, in: Proceedings of The
+   19th International Conference on Neurosymbolic Learning and Reasoning, volume 284 of Proceedings of Machine Learning
+   Research, PMLR, 2025,pp. 565–588. URL: https://proceedings.mlr.press/v284/karabulut25a.html.
 2. R. Agrawal, R. Srikant, et al. Fast algorithms for mining association
    rules. In Proceedings of the 20th International Conference on Very
    Large Data Bases, VLDB, volume 1215, pages 487–499, 1994.
