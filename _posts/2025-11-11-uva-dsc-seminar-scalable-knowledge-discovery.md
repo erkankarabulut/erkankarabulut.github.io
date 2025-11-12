@@ -45,22 +45,70 @@ Consider a small mushroom dataset sample:
     <img src="https://raw.githubusercontent.com/erkankarabulut/dsc_seminar/master/figures/mushroom.png" alt="Mushroom anatomy diagram" style="max-width: 300px; height: auto; display: block; margin: 0 auto;">
   </div>
   <div style="overflow-x: auto; width: 100%;">
-    <table style="border-collapse: collapse; margin: 0 auto;">
-      <tr style="background-color: #f2f2f2; font-weight: bold;">
-        <td style="border: 1px solid #ddd; padding: 8px;">cap-shape</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">cap-color</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">odor</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">habitat</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">poisonous</td>
+    <table class="centered-table">
+      <tr>
+        <th>cap-shape</th>
+        <th>cap-color</th>
+        <th>odor</th>
+        <th>habitat</th>
+        <th>poisonous</th>
       </tr>
-      <tr><td style="border: 1px solid #ddd; padding: 8px;">bell</td><td style="border: 1px solid #ddd; padding: 8px;">brown</td><td style="border: 1px solid #ddd; padding: 8px;">foul</td><td style="border: 1px solid #ddd; padding: 8px;">woods</td><td style="border: 1px solid #ddd; padding: 8px;">yes</td></tr>
-      <tr><td style="border: 1px solid #ddd; padding: 8px;">convex</td><td style="border: 1px solid #ddd; padding: 8px;">brown</td><td style="border: 1px solid #ddd; padding: 8px;">none</td><td style="border: 1px solid #ddd; padding: 8px;">woods</td><td style="border: 1px solid #ddd; padding: 8px;">no</td></tr>
-      <tr><td style="border: 1px solid #ddd; padding: 8px;">convex</td><td style="border: 1px solid #ddd; padding: 8px;">brown</td><td style="border: 1px solid #ddd; padding: 8px;">none</td><td style="border: 1px solid #ddd; padding: 8px;">woods</td><td style="border: 1px solid #ddd; padding: 8px;">no</td></tr>
-      <tr><td style="border: 1px solid #ddd; padding: 8px;">convex</td><td style="border: 1px solid #ddd; padding: 8px;">brown</td><td style="border: 1px solid #ddd; padding: 8px;">none</td><td style="border: 1px solid #ddd; padding: 8px;">woods</td><td style="border: 1px solid #ddd; padding: 8px;">no</td></tr>
-      <tr><td style="border: 1px solid #ddd; padding: 8px;">bell</td><td style="border: 1px solid #ddd; padding: 8px;">red</td><td style="border: 1px solid #ddd; padding: 8px;">foul</td><td style="border: 1px solid #ddd; padding: 8px;">urban</td><td style="border: 1px solid #ddd; padding: 8px;">yes</td></tr>
-      <tr><td style="border: 1px solid #ddd; padding: 8px;">convex</td><td style="border: 1px solid #ddd; padding: 8px;">brown</td><td style="border: 1px solid #ddd; padding: 8px;">none</td><td style="border: 1px solid #ddd; padding: 8px;">woods</td><td style="border: 1px solid #ddd; padding: 8px;">no</td></tr>
-      <tr><td style="border: 1px solid #ddd; padding: 8px;">flat</td><td style="border: 1px solid #ddd; padding: 8px;">brown</td><td style="border: 1px solid #ddd; padding: 8px;">almond</td><td style="border: 1px solid #ddd; padding: 8px;">woods</td><td style="border: 1px solid #ddd; padding: 8px;">no</td></tr>
-      <tr><td style="border: 1px solid #ddd; padding: 8px;">convex</td><td style="border: 1px solid #ddd; padding: 8px;">brown</td><td style="border: 1px solid #ddd; padding: 8px;">none</td><td style="border: 1px solid #ddd; padding: 8px;">woods</td><td style="border: 1px solid #ddd; padding: 8px;">no</td></tr>
+      <tr>
+        <td>bell</td>
+        <td>brown</td>
+        <td>foul</td>
+        <td>woods</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>convex</td>
+        <td>brown</td>
+        <td>none</td>
+        <td>woods</td>
+        <td>no</td>
+      </tr>
+      <tr>
+        <td>convex</td>
+        <td>brown</td>
+        <td>none</td>
+        <td>woods</td>
+        <td>no</td>
+      </tr>
+      <tr>
+        <td>convex</td>
+        <td>brown</td>
+        <td>none</td>
+        <td>woods</td>
+        <td>no</td>
+      </tr>
+      <tr>
+        <td>bell</td>
+        <td>red</td>
+        <td>foul</td>
+        <td>urban</td>
+        <td>yes</td>
+      </tr>
+      <tr>
+        <td>convex</td>
+        <td>brown</td>
+        <td>none</td>
+        <td>woods</td>
+        <td>no</td>
+      </tr>
+      <tr>
+        <td>flat</td>
+        <td>brown</td>
+        <td>almond</td>
+        <td>woods</td>
+        <td>no</td>
+      </tr>
+      <tr>
+        <td>convex</td>
+        <td>brown</td>
+        <td>none</td>
+        <td>woods</td>
+        <td>no</td>
+      </tr>
     </table>
   </div>
 </div>
