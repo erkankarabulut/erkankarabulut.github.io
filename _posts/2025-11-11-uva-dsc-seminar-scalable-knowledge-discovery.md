@@ -7,6 +7,8 @@ image: '/assets/images/lab42.png'
 description: 'A walkthrough of scalable knowledge discovery from tabular data using neurosymbolic methods, covering association rule mining, its challenges, and neurosymbolic solutions with Aerial.'
 ---
 
+Lab 42. Image source: https://campus.uva.nl/science-park/lab42/lab42.html
+
 # Scalable Knowledge Discovery
 
 This blog post is derived from

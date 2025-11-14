@@ -9,13 +9,9 @@ figuring out what I want to do, taking responsibility for students. And the nega
 life, the darkest months of the Netherlands.'
 ---
 
-# Scribbles around the first year as a PhD student
+Lab 42. Image source: https://campus.uva.nl/science-park/lab42/lab42.html
 
-<p align="center">
-    <img alt="digital twins illustration taken from paper [2]" src="/assets/images/lab42.png" width="95%">
-    <br/>
-    <span>Lab 42. Image source: https://campus.uva.nl/science-park/lab42/lab42.html</span>
-</p>
+# Scribbles around the first year as a PhD student
 
 One year ago, I moved to the Netherlands without knowing anyone here, to start my PhD. And I moved 3 days before my work
 starts. I have now completed the first year of my PhD. As a way of convincing my brain to look back and take lessons
