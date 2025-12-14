@@ -58,18 +58,39 @@ layout: default
     </div>
 </section>
 
+<!-- Blog Preview Section -->
+<section class="blog-preview-section section-alt">
+    <div class="container">
+        <div class="section-header-inline">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <a href="/blog" class="view-all-link-inline">See all</a>
+        </div>
+        <div class="blog-preview-grid">
+            {% for post in site.posts limit:3 %}
+            <a href="{{ post.url }}" class="blog-card-horizontal">
+                <img class="blog-card-thumb" src="{{ post.image }}" alt="{{ post.title }}">
+                <div class="blog-card-info">
+                    <h3 class="blog-card-title">{{ post.title }}</h3>
+                    <p class="blog-card-date">{{ post.publish_date }}</p>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
 <!-- News Section -->
-<section class="news-section section-alt">
+<section class="news-section">
     <div class="container">
         <div class="section-header">
             <h2 class="section-title">Recent Activities</h2>
         </div>
         <ul class="content-list">
-            {% for item in site.data.news limit:9 %}
+            {% for item in site.data.news limit:5 %}
             <li>{{item}}</li>
             {% endfor %}
         </ul>
-        {% if site.data.news.size > 9 %}
+        {% if site.data.news.size > 5 %}
         <a href="/news/" class="view-all-link">See all activities</a>
         {% endif %}
     </div>
@@ -82,38 +103,55 @@ layout: default
             <h2 class="section-title">Publications</h2>
         </div>
 
-        {% assign publications_by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
         {% assign total_shown = 0 %}
-
-        {% for year_group in publications_by_year %}
-            {% if total_shown < 9 %}
-            <div class="year-group">
-                <h3 class="year-header">{{ year_group.name }}</h3>
-                <ul class="publications-list">
-                    {% for item in year_group.items %}
-                        {% if total_shown < 9 %}
-                        <li class="publication-item">
-                            <span class="publication-text">{{ item.title }}</span>
-                            <a target="_blank" href="{{ item.link }}" class="publication-link" aria-label="View PDF">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                    <polyline points="14 2 14 8 20 8"></polyline>
-                                    <line x1="16" y1="13" x2="8" y2="13"></line>
-                                    <line x1="16" y1="17" x2="8" y2="17"></line>
-                                    <polyline points="10 9 9 9 8 9"></polyline>
-                                </svg>
-                                <span class="pdf-label">PDF</span>
-                            </a>
-                        </li>
-                        {% assign total_shown = total_shown | plus: 1 %}
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
+        <ul class="publications-list">
+        {% for pub in site.data.publications %}
+            {% if total_shown < 5 %}
+            <li class="publication-item">
+                {% if pub.abstract and pub.abstract != '' %}
+                <details class="publication-details">
+                    <summary class="publication-summary">
+                        <span class="publication-text">{{ pub.title }}</span>
+                        <span class="abstract-toggle" aria-label="Toggle Abstract">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            <span class="abstract-label">Abstract</span>
+                        </span>
+                        <a target="_blank" href="{{ pub.link }}" class="publication-link" aria-label="View PDF" onclick="event.stopPropagation();">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            <span class="pdf-label">PDF</span>
+                        </a>
+                    </summary>
+                    <p class="publication-abstract">{{ pub.abstract }}</p>
+                </details>
+                {% else %}
+                <span class="publication-text">{{ pub.title }}</span>
+                <a target="_blank" href="{{ pub.link }}" class="publication-link" aria-label="View PDF">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    <span class="pdf-label">PDF</span>
+                </a>
+                {% endif %}
+            </li>
+            {% assign total_shown = total_shown | plus: 1 %}
             {% endif %}
         {% endfor %}
+        </ul>
 
-        {% if site.data.publications.size > 9 %}
+        {% if site.data.publications.size > 5 %}
         <a href="/publications/" class="view-all-link">See all publications</a>
         {% endif %}
     </div>

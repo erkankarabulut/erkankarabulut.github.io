@@ -35,7 +35,7 @@
 
 .publication-item {
   padding-left: var(--space-lg);
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
   position: relative;
   text-align: justify;
   line-height: var(--line-height-relaxed);
@@ -48,6 +48,69 @@
   left: 0;
   color: var(--color-accent);
   font-weight: var(--font-weight-bold);
+}
+
+/* Abstract Dropdown Styles */
+.publication-details {
+  width: 100%;
+}
+
+.publication-summary {
+  cursor: pointer;
+  list-style: none;
+  display: inline;
+}
+
+.publication-summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Abstract button styled like PDF button */
+.abstract-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: var(--space-sm);
+  padding: 2px 8px;
+  border-radius: var(--border-radius-sm);
+  background-color: rgba(0, 0, 0, 0.08);
+  opacity: 0.85;
+  transition: opacity var(--transition-fast), background-color var(--transition-fast);
+  vertical-align: middle;
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
+
+.abstract-toggle:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.abstract-toggle svg {
+  color: var(--color-link);
+  flex-shrink: 0;
+}
+
+.abstract-label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-link);
+  letter-spacing: 0.025em;
+}
+
+.publication-details[open] .abstract-toggle {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.publication-abstract {
+  margin-top: var(--space-sm);
+  padding: var(--space-md);
+  background-color: var(--color-background-alt, rgba(0, 0, 0, 0.03));
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
 }
 
 .publication-text {
@@ -164,5 +227,28 @@
     padding-left: var(--space-md);
     margin-bottom: var(--space-md);
     text-align: left;
+  }
+
+  .publication-item::before {
+    display: none;
+  }
+
+  .publication-abstract {
+    padding: var(--space-sm);
+    font-size: var(--font-size-xs);
+    margin-left: 0;
+  }
+
+  .abstract-toggle,
+  .publication-link {
+    font-size: 0.7rem;
+    padding: 1px 6px;
+    margin-left: 4px;
+  }
+
+  .abstract-toggle svg,
+  .publication-link svg {
+    width: 14px;
+    height: 14px;
   }
 }
