@@ -96,8 +96,8 @@
 .post-footer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: var(--space-sm);
-  color: var(--color-accent);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-medium);
 }
@@ -105,6 +105,38 @@
 .post-footer svg {
   width: 16px;
   height: 16px;
+}
+
+.post-stats {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  color: var(--color-text-tertiary);
+  font-size: 0.813rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat-item svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.stat-item .count {
+  min-width: 12px;
+  text-align: left;
+}
+
+.read-more {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-accent);
 }
 
 /* Empty State */
@@ -169,5 +201,15 @@
 
   .post-footer {
     font-size: 0.75rem;
+  }
+
+  .post-stats {
+    gap: var(--space-sm);
+    font-size: 0.75rem;
+  }
+
+  .stat-item svg {
+    width: 12px;
+    height: 12px;
   }
 }

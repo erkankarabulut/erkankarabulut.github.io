@@ -1,0 +1,75 @@
+name: Update Discussion Stats
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Run every 6 hours
+  workflow_dispatch:  # Allow manual triggering
+  push:
+    branches:
+      - main
+    paths:
+      - '_posts/**'
+      - '.github/workflows/update-discussion-stats.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch discussion stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Fetch discussions from the General category
+          gh api graphql -f query='
+          {
+            repository(owner: "erkankarabulut", name: "erkankarabulut.github.io") {
+              discussions(first: 100, categoryId: "DIC_kwDOJJ-ULs4CxNQ3") {
+                nodes {
+                  title
+                  url
+                  comments {
+                    totalCount
+                  }
+                  reactions {
+                    totalCount
+                  }
+                }
+              }
+            }
+          }' > /tmp/discussions.json
+
+          # Transform the data into a simpler format
+          cat /tmp/discussions.json | jq '{
+            discussions: [
+              .data.repository.discussions.nodes[] | {
+                title: .title,
+                url: .url,
+                comments: .comments.totalCount,
+                reactions: .reactions.totalCount
+              }
+            ],
+            lastUpdated: (now | strftime("%Y-%m-%d %H:%M:%S UTC"))
+          }' > assets/discussion-stats.json
+
+          echo "Generated discussion stats:"
+          cat assets/discussion-stats.json
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add assets/discussion-stats.json
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update discussion stats [skip ci]"
+            git push
+          fi
