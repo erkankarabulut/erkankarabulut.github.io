@@ -1,3 +1,7 @@
+- name: About
+  link: /
+  id: about
+  target: _self
 - name: Publications
   link: /publications
   id: publications

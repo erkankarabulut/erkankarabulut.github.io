@@ -1,140 +1,151 @@
-/* ===================================
+/* ============================================================
    Individual Blog Post Page
-   =================================== */
+   ============================================================ */
 
 .blog-post {
-  padding: var(--space-3xl) var(--space-lg);
-  min-height: calc(100vh - var(--nav-height));
+  padding-bottom: var(--s5);
+}
+
+.blog-post .container {
+  padding-top: var(--s4);
+}
+
+.back-to-blog {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-bottom: var(--s3);
+}
+
+.back-to-blog:hover {
+  color: var(--text);
+  text-decoration: none;
 }
 
 .blog-post-header {
-  margin-bottom: var(--space-2xl);
-  padding-bottom: var(--space-xl);
-  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--s4);
+  padding-bottom: var(--s3);
+  border-bottom: 1px solid var(--border);
 }
 
 .blog-post-title {
-  font-size: var(--font-size-4xl);
-  font-weight: var(--font-weight-bold);
-  margin-bottom: var(--space-md);
-  line-height: var(--line-height-tight);
-  color: var(--color-text-primary);
+  font-family: var(--font-ui);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text);
+  margin-bottom: var(--s1);
 }
 
 .blog-post-meta {
-  display: flex;
-  align-items: center;
-  gap: var(--space-lg);
-  font-size: var(--font-size-sm);
-  color: var(--color-text-tertiary);
-}
-
-.blog-post-date {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
 }
 
 .blog-post-featured-image {
   width: 100%;
-  max-height: 500px;
+  height: auto;
+  max-height: 420px;
   object-fit: cover;
-  border-radius: var(--border-radius-lg);
-  margin-bottom: var(--space-2xl);
+  border-radius: var(--radius);
+  margin-bottom: var(--s4);
+  display: block;
 }
 
-/* Blog Post Content */
+/* ============================================================
+   Blog Post Prose
+   ============================================================ */
+
 .blog-post-content {
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-relaxed);
-  color: var(--color-text-secondary);
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--text);
 }
 
 .blog-post-content h1,
 .blog-post-content h2,
 .blog-post-content h3,
-.blog-post-content h4,
-.blog-post-content h5,
-.blog-post-content h6 {
-  color: var(--color-text-primary);
-  margin-top: var(--space-2xl);
-  margin-bottom: var(--space-md);
+.blog-post-content h4 {
+  margin-top: var(--s4);
 }
 
-.blog-post-content h1 { font-size: var(--font-size-3xl); }
-.blog-post-content h2 { font-size: var(--font-size-2xl); }
-.blog-post-content h3 { font-size: var(--font-size-xl); }
-.blog-post-content h4 { font-size: var(--font-size-lg); }
+.blog-post-content h2 {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--text-muted);
+  padding-bottom: var(--s1);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--s3);
+}
+
+.blog-post-content h3 {
+  font-family: var(--font-ui);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: var(--s2);
+}
+
+.blog-post-content h4 {
+  font-family: var(--font-ui);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: var(--s1);
+}
 
 .blog-post-content p {
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--s3);
+  color: var(--text);
   text-align: justify;
+  hyphens: auto;
 }
 
 .blog-post-content a {
-  color: var(--color-link);
+  color: var(--link);
   text-decoration: underline;
-  text-decoration-color: var(--color-accent);
-  text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
 
 .blog-post-content a:hover {
-  color: var(--color-link-hover);
+  color: var(--link-hover);
 }
 
 .blog-post-content ul,
 .blog-post-content ol {
-  margin-bottom: var(--space-lg);
-  padding-left: var(--space-xl);
+  padding-left: var(--s3);
+  margin-bottom: var(--s3);
 }
 
 .blog-post-content li {
-  margin-bottom: var(--space-sm);
-  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--s1);
+  line-height: 1.65;
 }
 
 .blog-post-content blockquote {
-  border-left: 4px solid var(--color-accent);
-  padding-left: var(--space-lg);
-  margin: var(--space-xl) 0;
+  border-left: 3px solid var(--border);
+  padding-left: var(--s3);
+  margin: var(--s4) 0;
   font-style: italic;
-  color: var(--color-text-secondary);
+  color: var(--text-muted);
 }
 
 .blog-post-content img {
   max-width: 100%;
   height: auto;
-  border-radius: var(--border-radius-md);
-  margin: var(--space-xl) 0;
+  border-radius: var(--radius);
+  display: block;
+  margin: var(--s4) auto;
 }
 
 .blog-post-content pre {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius-md);
-  padding: var(--space-lg);
-  margin: var(--space-xl) 0;
-  overflow-x: auto;
-  font-family: var(--font-mono);
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-relaxed);
-}
-
-.blog-post-content code {
-  font-family: var(--font-mono);
-  font-size: 0.9em;
-  background-color: var(--color-surface);
-  padding: 0.2em 0.4em;
-  border-radius: var(--border-radius-sm);
-  border: 1px solid var(--color-border);
-}
-
-.blog-post-content pre code {
-  background: none;
-  padding: 0;
-  border: none;
-  font-size: inherit;
+  margin: var(--s4) 0;
 }
 
 /* Tables */
@@ -142,27 +153,25 @@
 .centered-table {
   width: 100%;
   border-collapse: collapse;
-  margin: var(--space-xl) 0;
-  background-color: var(--color-card-bg);
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius-md);
-  overflow: hidden;
+  margin: var(--s4) 0;
+  font-size: var(--text-sm);
+  font-family: var(--font-ui);
 }
 
 .blog-post-content th,
 .blog-post-content td,
 .centered-table th,
 .centered-table td {
-  padding: var(--space-md);
+  padding: var(--s1) var(--s2);
   text-align: left;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--border);
 }
 
 .blog-post-content th,
 .centered-table th {
-  background-color: var(--color-surface);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-text-primary);
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 2px solid var(--border);
 }
 
 .blog-post-content tr:last-child td,
@@ -174,150 +183,43 @@
   margin-left: auto;
   margin-right: auto;
   width: auto;
-  min-width: 300px;
 }
 
 .centered-table th,
 .centered-table td {
   text-align: center;
-  min-width: 100px;
+  min-width: 80px;
 }
 
-/* Back to Blog Link */
-.back-to-blog {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-sm);
-  margin-bottom: var(--space-xl);
-  color: var(--color-accent);
-  font-weight: var(--font-weight-medium);
-  transition: color var(--transition-fast);
+/* ============================================================
+   Giscus Comments
+   ============================================================ */
+
+.giscus-comments {
+  margin-top: var(--s5);
+  padding-top: var(--s4);
+  border-top: 1px solid var(--border);
 }
 
-.back-to-blog:hover {
-  color: var(--color-accent-hover);
-  text-decoration: none;
+.giscus,
+.giscus-frame {
+  width: 100%;
 }
 
-.back-to-blog svg {
-  width: 16px;
-  height: 16px;
-}
+/* ============================================================
+   Mobile
+   ============================================================ */
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .blog-post {
-    padding: var(--space-xl) var(--space-md);
-  }
-
-  .blog-post-header {
-    margin-bottom: var(--space-lg);
-    padding-bottom: var(--space-md);
-  }
-
+@media (max-width: 600px) {
   .blog-post-title {
-    font-size: var(--font-size-xl);
-    margin-bottom: var(--space-sm);
-  }
-
-  .blog-post-meta {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--space-xs);
-    font-size: 0.75rem;
-  }
-
-  .blog-post-featured-image {
-    max-height: 300px;
-    margin-bottom: var(--space-lg);
+    font-size: var(--text-xl);
   }
 
   .blog-post-content {
-    font-size: var(--font-size-sm);
+    font-size: var(--text-base);
   }
 
-  .blog-post-content p {
-    text-align: left;
-    margin-bottom: var(--space-md);
-  }
-
-  .blog-post-content h1 {
-    font-size: var(--font-size-xl);
-    margin-top: var(--space-lg);
-  }
-  .blog-post-content h2 {
-    font-size: var(--font-size-lg);
-    margin-top: var(--space-lg);
-  }
   .blog-post-content h3 {
-    font-size: var(--font-size-base);
-    margin-top: var(--space-md);
-  }
-
-  .blog-post-content ul,
-  .blog-post-content ol {
-    padding-left: var(--space-lg);
-    margin-bottom: var(--space-md);
-  }
-
-  .blog-post-content blockquote {
-    padding-left: var(--space-md);
-    margin: var(--space-md) 0;
-    font-size: var(--font-size-sm);
-  }
-
-  .blog-post-content pre {
-    padding: var(--space-sm);
-    font-size: 0.7rem;
-    margin: var(--space-md) 0;
-  }
-
-  .blog-post-content img {
-    margin: var(--space-md) 0;
-  }
-
-  .blog-post-content table,
-  .centered-table {
-    font-size: 0.75rem;
-    margin: var(--space-md) 0;
-  }
-
-  .blog-post-content th,
-  .blog-post-content td,
-  .centered-table th,
-  .centered-table td {
-    padding: var(--space-xs) var(--space-sm);
-  }
-
-  .centered-table {
-    min-width: auto;
-  }
-
-  .back-to-blog {
-    margin-bottom: var(--space-md);
-    font-size: var(--font-size-sm);
-  }
-}
-
-/* ===================================
-   Giscus Comments Section
-   =================================== */
-
-.giscus-comments {
-  margin-top: var(--space-3xl);
-  padding-top: var(--space-2xl);
-  border-top: 2px solid var(--color-border);
-}
-
-/* Adjust giscus theme colors to match site */
-.giscus, .giscus-frame {
-  width: 100%;
-  margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-  .giscus-comments {
-    margin-top: var(--space-xl);
-    padding-top: var(--space-lg);
+    font-size: var(--text-lg);
   }
 }
